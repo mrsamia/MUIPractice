@@ -5,7 +5,10 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import TextField from '@mui/material/TextField';
 import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
-import {  Tooltip, Typography } from '@mui/material';
+import { Tooltip } from '@mui/material';
+import AutoComplete from './Component/AutoComplete';
+import TypoGraphy from './Component/TypoGraphy';
+import Nav from './Component/Nav';
 
 const sx = {
   height: 80,
@@ -13,15 +16,14 @@ const sx = {
 }
 
 function App() {
-
   function ClickHandler() {
     alert("click me")
   }
+
   return (
     <div className="App">
-      <div className='pt-4'>
-        <Typography variant='h4'>This is My First MUI Project</Typography>
-      </div>
+      <Nav/>
+      <TypoGraphy />
       <div className='pt-4'>
         <Tooltip arrow placement='right' title="This is Mui button">
           <Button variant="contained" color='success' size="large" sx={sx} startIcon={<AccessAlarmIcon />}> React App </Button>
@@ -40,7 +42,7 @@ function App() {
       <div className='pt-4'>
         <TextField label="Filled" />
       </div>
-    
+      <AutoComplete />
 
     </div>
   );
