@@ -9,6 +9,7 @@ import { Tooltip } from '@mui/material';
 import AutoComplete from './Component/AutoComplete';
 import TypoGraphy from './Component/TypoGraphy';
 import Nav from './Component/Nav';
+import CardMaping from './Component/CardMaping';
 
 const sx = {
   height: 80,
@@ -22,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <Nav/>
+      <Nav />
       <TypoGraphy />
       <div className='pt-4'>
         <Tooltip arrow placement='right' title="This is Mui button">
@@ -43,6 +44,7 @@ function App() {
         <TextField label="Filled" />
       </div>
       <AutoComplete />
+      <CardMaping />
 
     </div>
   );
