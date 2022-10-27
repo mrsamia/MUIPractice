@@ -10,6 +10,7 @@ import AutoComplete from './Component/AutoComplete';
 import TypoGraphy from './Component/TypoGraphy';
 import Nav from './Component/Nav';
 import CardMaping from './Component/CardMaping';
+import Grrid from './Component/Grrid';
 
 const sx = {
   height: 80,
@@ -45,7 +46,7 @@ function App() {
       </div>
       <AutoComplete />
       <CardMaping />
-
+      <Grrid/>
     </div>
   );
 }
