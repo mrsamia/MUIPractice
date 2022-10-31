@@ -11,6 +11,7 @@ import TypoGraphy from './Component/TypoGraphy';
 import Nav from './Component/Nav';
 import CardMaping from './Component/CardMaping';
 import Grrid from './Component/Grrid';
+import Accordion from './Component/Accordion';
 
 const sx = {
   height: 80,
@@ -25,6 +26,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
+      <Accordion/>
       <TypoGraphy />
       <div className='pt-4'>
         <Tooltip arrow placement='right' title="This is Mui button">

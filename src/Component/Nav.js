@@ -2,28 +2,18 @@ import { AppBar, Button, Container, CssBaseline, Grid, Toolbar, Typography } fro
 import PhotoCameraIcon from '@mui/icons-material/PhotoCamera';
 import React from 'react';
 import CarD from './CarD';
-// import Styles from '../CSS/Styles';
-// import { makeStyles } from "@mui/core/styles";
-
-
-
-
-// const useStyles = makeStyles((theme) => ({
-//     icon: {
-//         marginRight: "20px"
-//     }
-// }));
+import Styles from '../CSS/Styles';
 
 
 
 function Nav(props) {
-//    const classes = useStyles();
+   const classes = Styles();
     return (
         <div>
             <CssBaseline />
             <AppBar position='relative'>
                 <Toolbar>
-                    <PhotoCameraIcon  />
+                    <PhotoCameraIcon className={classes.icon} />
                     <Typography variant='h6'>Photo Album</Typography>
                 </Toolbar>
             </AppBar>
