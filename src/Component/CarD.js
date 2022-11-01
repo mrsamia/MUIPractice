@@ -1,10 +1,13 @@
+import { ClassNames } from '@emotion/react';
 import { Button, Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material';
 import React from 'react';
+import Styles from '../CSS/Styles';
 
 function CarD(props) {
+    const classes= Styles();
     return (
         <div>
-            <Card sx={{ maxWidth: 400 }}>
+            <Card sx={{ maxWidth: 400 }} className={classes.sectionMT}>
                 <CardMedia
                     component="img"
                     height="500"

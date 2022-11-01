@@ -26,7 +26,6 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <Accordion/>
       <TypoGraphy />
       <div className='pt-4'>
         <Tooltip arrow placement='right' title="This is Mui button">
@@ -47,8 +46,10 @@ function App() {
         <TextField label="Filled" />
       </div>
       <AutoComplete />
+      <Accordion/>
       <CardMaping />
       <Grrid/>
+     
     </div>
   );
 }

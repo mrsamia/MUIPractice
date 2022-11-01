@@ -1,20 +1,21 @@
+import { ClassNames } from '@emotion/react';
 import { Divider, Grid, Typography, } from '@mui/material';
 import { Container } from '@mui/system';
 import React from 'react';
 
 function Grrid(props) {
     return (
-        <>
-            <Grid container spacing={3}>
-                <Grid item xs={8}>
-                    <Typography variant='h6' align='start'> The rowSpacing</Typography>
+        < div className='pt-5'>
+            <Grid container spacing={3} sx={{backgroundColor:'green'}}>
+                <Grid item xs={7} sx={{marginLeft:"70px"}}>
+                    <Typography variant='h6' align='start' color="white"> The rowSpacing</Typography>
                 </Grid>
-                <Grid item xs={4}>
-                    <Typography variant='h6' align='end'>Logout</Typography>
+                <Grid item xs={4} sx={{marginRight:"70px" }}>
+                    <Typography variant='h6' align='end' color="white">Logout</Typography>
                 </Grid>
             </Grid>
             <Divider></Divider>
-            <Container>
+            <Container className='pt-5 pb-5'>
                 <Grid container spacing={3} >
 
                     <Grid item xs={6}>
@@ -30,7 +31,7 @@ function Grrid(props) {
                     </Grid>
                 </Grid>
             </Container>
-        </>
+        </div>
     );
 }
 

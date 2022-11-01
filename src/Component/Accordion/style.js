@@ -2,14 +2,19 @@ import { makeStyles } from "@mui/styles";
 
 const accordionStyles = makeStyles({
     root: {
-        color: 'red !important'
+        color: 'White !important',
+        backgroundColor:'#2e7d32!important'
     },
     disabled: {
         color: 'white !important',
         backgroundColor: 'red !important'
     },
     expanded: {
-        color: 'yellow !important'
+        color: 'green !important',
+        backgroundColor:'white!important'
+    },
+    sectionMT:{
+        marginTop:"50px!important"
     }
 })
 

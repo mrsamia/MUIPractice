@@ -27,10 +27,10 @@ const TopFlims = [{
 
 function AutoComplete(props) {
     return (
-        <div className='container pt-4'>
+        <div className='container pt-4 pb-5'>
             <Typography variant='h6'>AutoComplete</Typography>
             <div className='d-flex justify-content-center'>
-                <Autocomplete
+                <Autocomplete 
                     getOptionLabel={(option) => option.name + "  " + option.year}
                     options={TopFlims}
                     sx={{ width: 300 }}
