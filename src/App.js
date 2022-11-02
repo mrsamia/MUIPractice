@@ -12,6 +12,7 @@ import Nav from './Component/Nav';
 import CardMaping from './Component/CardMaping';
 import Grrid from './Component/Grrid';
 import Accordion from './Component/Accordion';
+import Ratting from './Component/Ratting';
 
 const sx = {
   height: 80,
@@ -49,6 +50,7 @@ function App() {
       <Accordion/>
       <CardMaping />
       <Grrid/>
+      <Ratting/>
      
     </div>
   );
